@@ -3,9 +3,9 @@ node ('master') {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("my-hello-world")
+        def customImage = docker.build("my-hello-world-jing-homework")
 
         /* Push the container to the custom Registry */
-        customImage.push()
+        /*customImage.push()*/
     }
 }
