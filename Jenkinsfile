@@ -1,4 +1,4 @@
-node ('master') {
+node ('slave1') {
     checkout scm
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
